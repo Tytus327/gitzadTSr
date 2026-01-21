@@ -17,7 +17,15 @@ int main()
 
 	std::cin >> x >> y;
 
-	std::cout << x << " " << y << ", NWD = " << NWD(x, y) << std::endl;
+	if(x < 1 || y < 1)
+	{
+		std::cout << "Koniec dzialania programu. Podaj dodatnie liczby." << std::endl;
+		return 1;
+	}
+	else
+	{
+		std::cout << x << " " << y << ", NWD = " << NWD(x, y) << std::endl;
+	}
 
 	return 0;
 }
